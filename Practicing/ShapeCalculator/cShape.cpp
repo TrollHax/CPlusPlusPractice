@@ -53,3 +53,25 @@ cShape::cShape(double _radius) :
 cShape::~cShape()
 {
 }
+
+std::string cShape::CheckType()
+{
+	if (m_radius != 0) {
+		return "Circle";
+	}
+	else if (m_len1 == m_len2 && m_len2 == m_len3 && m_len3 == m_len4) {
+		return "Square";
+	}
+	else if (m_len1 == m_len3 && m_len2 == m_len4) {
+		return "Rectangle";
+	}
+	else if (m_len1 == m_len2 && m_len2 == m_len3) {
+		return "Equilateral Triangle";
+	}
+	else if (m_len1 == m_len2 || m_len1 == m_len3 || m_len2 == m_len3) {
+		return "Isosceles Triangle";
+	}
+	else if (m_len1 != m_len2 && m_len1 != m_len3 && m_len2 != m_len3) {
+		return "Scalene Triangle";
+	}
+}

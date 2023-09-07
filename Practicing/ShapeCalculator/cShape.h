@@ -1,6 +1,7 @@
 #pragma once
 
 #include <math.h>
+#include <iostream>
 class cShape
 {
 private:
@@ -20,5 +21,9 @@ public:
 	cShape(double _len1, double _len2, double _len3, double _len4);
 	cShape(double _radius);
 	~cShape();
+
+	std::string CheckType();
+	virtual float CalcCirc() = 0;
+	virtual float CalcArea() = 0;
 };
 

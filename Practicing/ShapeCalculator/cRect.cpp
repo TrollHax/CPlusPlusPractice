@@ -16,14 +16,14 @@ cRect::~cRect()
 
 float cRect::CalcCirc()
 {
-	int circumferance = 0;
+	double circumferance = 0;
 	circumferance = m_len1 + m_len2 + m_len3 + m_len4;
 	return circumferance;
 }
 
 float cRect::CalcArea()
 {
-	int area = 0;
+	double area = 0;
 	area = m_len1 * m_len2;
 	return area;
 }
