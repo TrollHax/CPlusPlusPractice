@@ -155,10 +155,16 @@ int main()
 				catch (std::invalid_argument) {
 					std::cout << "\nInvalid input! Only numbers!";
 					Sleep(1000);
+					system("cls");
+					curr_menu = emenus::ADDSHAPE;
+					break;
 				}
 				catch (std::out_of_range) {
 					std::cout << "\nToo large! Please lower the value!";
 					Sleep(1000);
+					system("cls");
+					curr_menu = emenus::ADDSHAPE;
+					break;
 				}
 
 				std::cout << "Enter side 2 size: ";
@@ -171,10 +177,16 @@ int main()
 				catch (std::invalid_argument) {
 					std::cout << "\nInvalid input! Only numbers!";
 					Sleep(1000);
+					system("cls");
+					curr_menu = emenus::ADDSHAPE;
+					break;
 				}
 				catch (std::out_of_range) {
 					std::cout << "\nToo large! Please lower the value!";
 					Sleep(1000);
+					system("cls");
+					curr_menu = emenus::ADDSHAPE;
+					break;
 				}
 
 				std::cout << "Enter side 3 size: ";
@@ -187,10 +199,16 @@ int main()
 				catch (std::invalid_argument) {
 					std::cout << "\nInvalid input! Only numbers!";
 					Sleep(1000);
+					system("cls");
+					curr_menu = emenus::ADDSHAPE;
+					break;
 				}
 				catch (std::out_of_range) {
 					std::cout << "\nToo large! Please lower the value!";
 					Sleep(1000);
+					system("cls");
+					curr_menu = emenus::ADDSHAPE;
+					break;
 				}
 
 				if (val1 + val2 > val3 &&
