@@ -1,7 +1,7 @@
 #pragma once
 
 #include "cShape.h"
-class cTriangle : cShape
+class cTriangle : public cShape
 {
 private:
 
@@ -12,7 +12,7 @@ public:
 	cTriangle(double _len1, double _len2, double _len3);
 	~cTriangle();
 
-	float CalcCirc();
-	float CalcArea();
+	double CalcCirc();
+	double CalcArea();
 };
 

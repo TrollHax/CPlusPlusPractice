@@ -19,12 +19,14 @@ cTriangle::~cTriangle()
 {
 }
 
-float cTriangle::CalcCirc()
+double cTriangle::CalcCirc()
 {
-	return 0;
+	double circumferance = 0;
+	circumferance = m_len1 + m_len2 + m_len3;
+	return circumferance;
 }
 
-float cTriangle::CalcArea()
+double cTriangle::CalcArea()
 {
 	double s = 0;
 	double area = 0;

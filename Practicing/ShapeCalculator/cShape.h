@@ -23,7 +23,7 @@ public:
 	~cShape();
 
 	std::string CheckType();
-	virtual float CalcCirc() = 0;
-	virtual float CalcArea() = 0;
+	virtual double CalcCirc() = 0;
+	virtual double CalcArea() = 0;
 };
 

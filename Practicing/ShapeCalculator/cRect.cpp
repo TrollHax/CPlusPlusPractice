@@ -14,14 +14,14 @@ cRect::~cRect()
 {
 }
 
-float cRect::CalcCirc()
+double cRect::CalcCirc()
 {
 	double circumferance = 0;
 	circumferance = m_len1 + m_len2 + m_len3 + m_len4;
 	return circumferance;
 }
 
-float cRect::CalcArea()
+double cRect::CalcArea()
 {
 	double area = 0;
 	area = m_len1 * m_len2;
